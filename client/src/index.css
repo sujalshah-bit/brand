@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .horizontal-scroll-container {
+      overflow-x: scroll;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+      /* Optional: Add some styling to make it look like a container */
+      max-width: 100%;
+    }
+  
+    .horizontal-scroll-container a {
+      display: inline-block;
+      margin-right: 10px; /* Adjust as needed for spacing between items */
+      /* Add your other styles here */
+    }
+
+    .b-shadow{
+      box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    }
+  }

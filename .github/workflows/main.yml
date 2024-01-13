@@ -1,0 +1,45 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # or use the version suitable for your project
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build and test (Server)
+        run: npm run test-server # Replace with your server-specific test command
+
+      - name: ESLint check (Server)
+        run: npx eslint server
+
+      - name: Prettier check (Server)
+        run: npx prettier --check "server/**/*.js"
+
+      - name: Build and test (Client)
+        run: |
+          cd client
+          npm install
+          npm run test # Replace with your client-specific test command
+
+      - name: ESLint check (Client)
+        run: npx eslint client
+
+      - name: Prettier check (Client)
+        run: npx prettier --check "client/**/*.js"
+
+      # Add more steps for deployment if needed

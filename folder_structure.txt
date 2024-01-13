@@ -1,0 +1,169 @@
+D:.
+|   .eslintrc
+|   .gitignore
+|   .prettierignore
+|   .prettierrc
+|   index.js
+|   package.json
+|   tree.txt
+|   yarn.lock
+|   
++---client
+|   |   .eslintrc.cjs
+|   |   .gitignore
+|   |   colors.txt
+|   |   index.html
+|   |   package-lock.json
+|   |   package.json
+|   |   postcss.config.js
+|   |   README.md
+|   |   tailwind.config.js
+|   |   vite.config.js
+|   |   yarn-error.log
+|   |   yarn.lock
+|   | 
+|   +---public
+|   |       tab-logo.svg
+|   |       vite.svg
+|   |       
+|   \---src
+|       |   App.css
+|       |   App.jsx
+|       |   index.css
+|       |   main.jsx
+|       |   pay.txt
+|       |   
+|       +---admin
+|       |       Admin.jsx
+|       |       
+|       +---admin2
+|       |   |   index.js
+|       |   |   
+|       |   +---layouts
+|       |   |       auth.jsx
+|       |   |       dashboard.jsx
+|       |   |       index.js
+|       |   |       
+|       |   \---pages
+|       |       +---auth
+|       |       |       index.js
+|       |       |       sign-in.jsx
+|       |       |       sign-up.jsx
+|       |       |       
+|       |       \---dashboard
+|       |               home.jsx
+|       |               index.js
+|       |               notifications.jsx
+|       |               profile.jsx
+|       |               tables.jsx
+|       |               
+|       +---assets
+|       |   |   Avatar.png
+|       |   |   banner.png
+|       |   |   Group 970.png
+|       |   |   hero-section.png
+|       |   |   img-group.png
+|       |   |   img.png
+|       |   |   left-aside.png
+|       |   |   logo.png
+|       |   |   person.png
+|       |   |   product-image.png
+|       |   |   react.svg
+|       |   |   tab-img.png
+|       |   |   test1.png
+|       |   |   
+|       |   \---Button
+|       |           btn-group.png
+|       |           btn-groups.png
+|       |           
+|       +---components
+|       |   |   Cancel.jsx
+|       |   |   Carousel.css
+|       |   |   Carousel.jsx
+|       |   |   Cart.jsx
+|       |   |   Footer.jsx
+|       |   |   Home.jsx
+|       |   |   ProductDetail.jsx
+|       |   |   ProductListing.jsx
+|       |   |   Success.jsx
+|       |   |   
+|       |   +---Cart
+|       |   |       AssembleCart.jsx
+|       |   |       LargeCartVersion.jsx
+|       |   |       MobileCartVersion.jsx
+|       |   |       
+|       |   +---LandingComponent
+|       |   |       CompA.jsx
+|       |   |       CompB.jsx
+|       |   |       CompC.jsx
+|       |   |       CompD.jsx
+|       |   |       CompE.jsx
+|       |   |       
+|       |   +---Nav
+|       |   |       InputBar.jsx
+|       |   |       LgNav.jsx
+|       |   |       MobileNav.jsx
+|       |   |       MobileSidebar.jsx
+|       |   |       SubNav.jsx
+|       |   |       
+|       |   +---ProductDetailComponent
+|       |   |       Assemble.jsx
+|       |   |       LargeDeviceVersion.jsx
+|       |   |       MobileVersion.jsx
+|       |   |       
+|       |   \---ProductListingComponent
+|       |           Assemble.jsx
+|       |           Bar.jsx
+|       |           Dropdown.jsx
+|       |           SideBar.jsx
+|       |           utility.js
+|       |           ViewProduct.jsx
+|       |           
+|       +---recoil
+|       \---utility
+|               CompALinks.jsx
+|               CompBLinks.jsx
+|               CompCLg.jsx
+|               CompELinks.jsx
+|               MobNavLinks.jsx
+|               useWindowWidth.js
+|
++---node_modules
+|
+\---server
+    |   .env
+    |   index.js
+    |   package-lock.json
+    |   package.json
+    |   yarn-error.log
+    |   yarn.lock
+    |   
+    +---controller
+    |       admin.controller.js
+    |       authRoutes.controller.js
+    |       
+    +---middleware
+    |       verifyJWT.js
+    |       
+    +---models
+    |       orderSchema.js
+    |       productSchema.js
+    |       userSchema.js
+    |       
+    +---node_modules
+    |
+    +---router
+    |       admin.js
+    |       authRoutes.js
+    |       payment.js
+    |       
+    +---test
+    |       auth.test.js
+    |       
+    \---utils
+            ApiError.js
+            ApiResponse.js
+            asyncHandler.js
+            demo.json
+            ErrorHandler.js
+            index.py

@@ -1,0 +1,27 @@
+{
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "plugins": ["prettier"], // Add Prettier as a plugin
+    "rules": {
+      "prettier/prettier": "error", // Enable Prettier's rules
+      "no-unused-vars": "warn", 
+      "no-undef": "error", 
+      "semi": ["error", "always"], 
+      "prefer-const": "error",
+      "quotes": ["warn", "single"],
+      "indent": ["error", 2],
+      "prefer-arrow-callback": [
+        "error",
+        {
+          "allowNamedFunctions": false,
+          "allowUnboundThis": true
+        }
+      ]
+    }
+  }
+  
