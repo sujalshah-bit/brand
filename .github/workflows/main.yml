@@ -37,7 +37,7 @@ jobs:
           # npm run test # Replace with your client-specific test command
 
       - name: ESLint check (Client)
-        run: npx eslint ./**/*
+        run: npx eslint client/**/*
 
       - name: Prettier check (Client)
         run: npx prettier --check "client/**/*.{js,jsx,json}"
