@@ -1,13 +1,13 @@
-import { useState } from "react";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { useState } from 'react';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 
 const InputBar = () => {
   const [isOpen, setIsOpen] = useState(false); // To control dropdown visibility
-  const [inputValue, setInputValue] = useState(""); // To store the input value
-  const [selectedOption, setSelectedOption] = useState("All Category"); // To store the selected option
+  const [inputValue, setInputValue] = useState(''); // To store the input value
+  const [selectedOption, setSelectedOption] = useState('All Category'); // To store the selected option
 
   // Sample dropdown options
-  const options = ["All Category", "Option 2", "Option 3", "Option 4"];
+  const options = ['All Category', 'Option 2', 'Option 3', 'Option 4'];
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -32,7 +32,8 @@ const InputBar = () => {
         onClick={toggleDropdown}
         className="bg-white relative  flex items-center h-[32px] gap-3 px-2 border-r-[2px] border-[#127FFF] "
       >
-        <span className="text-xs cust-break:text-base">{`${selectedOption && selectedOption}`}</span> <RiArrowDropDownLine size={24} />
+        <span className="text-xs cust-break:text-base">{`${selectedOption && selectedOption}`}</span>{' '}
+        <RiArrowDropDownLine size={24} />
         {/* Dropdown box */}
         {isOpen && (
           <div className="absolute top-8 left-1 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg">
@@ -51,7 +52,7 @@ const InputBar = () => {
 
       {/* search button  */}
       <button className="bg-[#127FFF] h-[32px] px-2 text-white flex items-center justify-center rounded rounded-l-none cust-break:w-auto w-20 cust-break:flex-grow ">
-            Search
+        Search
       </button>
     </div>
   );

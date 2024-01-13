@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { RxDotsVertical } from "react-icons/rx";
+import { useState } from 'react';
+import { RxDotsVertical } from 'react-icons/rx';
 
 const MobileCartVersion = () => {
   const Counter = () => {
@@ -80,14 +80,16 @@ const MobileCartVersion = () => {
             </tr>
             <tr className="mt-10">
               <td className="font-bold text-black text-base  mt-10">Total:</td>
-              <td className=" text-black  font-semibold text-right text-base mt-10">$120</td>
+              <td className=" text-black  font-semibold text-right text-base mt-10">
+                $120
+              </td>
             </tr>
           </tbody>
         </table>
 
         <button className="bg-green-600 w-full rounded text-white text-sm my-3 h-10 focus:outline-none  active:bg-green-700 focus:shadow-outline-green">
-              Checkout
-            </button>
+          Checkout
+        </button>
       </section>
     </>
   );

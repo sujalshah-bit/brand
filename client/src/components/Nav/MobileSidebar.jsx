@@ -1,9 +1,8 @@
 // src/components/MobileNav.js
-import { useState } from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { sideBarLinks } from "../../utility/MobNavLinks";
-import { customerSupportLinks } from "../../utility/MobNavLinks";
-
+import { useState } from 'react';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import { sideBarLinks } from '../../utility/MobNavLinks';
+import { customerSupportLinks } from '../../utility/MobNavLinks';
 
 const MobileSidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +15,6 @@ const MobileSidebar = () => {
 
   return (
     <>
-  
       {/*  Hamburger Menu Icon */}
       <button
         className="text-black p-2 focus:outline-none "
@@ -34,7 +32,7 @@ const MobileSidebar = () => {
       {/* Sidebar */}
       <div
         className={`fixed top-0 bg-white text-black left-0 h-full w-[280px] transition-transform transform ${
-          isOpen ? "translate-x-0" : "-translate-x-[280px]"
+          isOpen ? 'translate-x-0' : '-translate-x-[280px]'
         } z-50`}
       >
         {/* User Profile Section */}
@@ -95,8 +93,6 @@ const MobileSidebar = () => {
       </div>
     </>
   );
-
-
 };
 
 export default MobileSidebar;

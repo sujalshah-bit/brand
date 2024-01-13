@@ -1,13 +1,11 @@
-import Bar from "./Bar"
-
+import Bar from './Bar';
 
 const ViewProduct = () => {
   return (
     <div className="bg-yellow-500">
-        <Bar/>
-        
+      <Bar />
     </div>
-  )
-}
+  );
+};
 
-export default ViewProduct
+export default ViewProduct;

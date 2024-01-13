@@ -7,6 +7,17 @@
       "es6": true
     },
     "plugins": ["prettier"], // Add Prettier as a plugin
+    "ignorePatterns": [
+      "dist",
+      ".eslintrc.cjs",
+      "**/*.css",
+      "**/*.html",
+      "**/*.py",
+      "**/*.json",
+      "**/* .*", // <-- Fix: Remove the space between "*" and "."
+      "**/*.log",
+      "**/*.lock"
+    ],
     "rules": {
       "prettier/prettier": "error", // Enable Prettier's rules
       "no-unused-vars": "warn", 

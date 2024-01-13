@@ -1,7 +1,7 @@
-import LgNav from "./Nav/LgNav";
-import MobileNav from "./Nav/MobileNav";
-import Assemble from "./ProductDetailComponent/Assemble";
-import useWindowWidth from "../utility/useWindowWidth";
+import LgNav from './Nav/LgNav';
+import MobileNav from './Nav/MobileNav';
+import Assemble from './ProductDetailComponent/Assemble';
+import useWindowWidth from '../utility/useWindowWidth';
 
 const ProductDetail = () => {
   const windowWidth = useWindowWidth();
@@ -15,7 +15,7 @@ const ProductDetail = () => {
         )}
 
         <section className="bg-[#F7FAFC]">
-          <Assemble Toshow={windowWidth > 900 ? "LG" : "MOB"} />
+          <Assemble Toshow={windowWidth > 900 ? 'LG' : 'MOB'} />
         </section>
       </div>
     </>

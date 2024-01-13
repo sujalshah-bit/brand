@@ -1,10 +1,10 @@
-import { IoBagCheckOutline } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa";
-import { GoArrowRight, GoArrowLeft } from "react-icons/go";
-import { LiaCommentSolid } from "react-icons/lia";
-import { useState } from "react";
-import PropTypes from "prop-types";
-import items from "../../utility/CompBLinks";
+import { IoBagCheckOutline } from 'react-icons/io5';
+import { FaRegHeart } from 'react-icons/fa';
+import { GoArrowRight, GoArrowLeft } from 'react-icons/go';
+import { LiaCommentSolid } from 'react-icons/lia';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import items from '../../utility/CompBLinks';
 
 const MobileVersion = ({ images, Stars }) => {
   const [toggleShow, setToggleShow] = useState(false);
@@ -91,7 +91,7 @@ const MobileVersion = ({ images, Stars }) => {
           neque maiores porro totam amet hic, tenetur ut magni in reprehenderit.
           {toggleShow ? (
             <>
-              {" "}
+              {' '}
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio cupiditate culpa vel, officiis id deserunt aspernatur
               sequi inventore explicabo consequatur rerum aliquid quas error,

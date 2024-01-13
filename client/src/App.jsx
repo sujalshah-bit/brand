@@ -1,12 +1,12 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import Success from "./components/Success";
-import Cancel from "./components/Cancel";
-import ProductDetail from "./components/ProductDetail";
-import Cart from "./components/Cart";
-import { RecoilRoot } from "recoil";
-import ProductListing from "./components/ProductListing";
-import Admin from "./admin/Admin";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Success from './components/Success';
+import Cancel from './components/Cancel';
+import ProductDetail from './components/ProductDetail';
+import Cart from './components/Cart';
+import { RecoilRoot } from 'recoil';
+import ProductListing from './components/ProductListing';
+import Admin from './admin/Admin';
 
 function App() {
   return (

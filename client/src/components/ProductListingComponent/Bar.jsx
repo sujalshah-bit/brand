@@ -1,4 +1,4 @@
-import Dropdown from "./Dropdown";
+import Dropdown from './Dropdown';
 
 const Bar = () => {
   return (
@@ -10,12 +10,21 @@ const Bar = () => {
         <Dropdown />
         <div>
           <button>
-            <img src="./src/assets/Button/btn-groups.png" width={30} height={40} alt="" />
+            <img
+              src="./src/assets/Button/btn-groups.png"
+              width={30}
+              height={40}
+              alt=""
+            />
           </button>
           <button>
-            <img src="./src/assets/Button/btn-group.png" width={30} height={40} alt="" />
+            <img
+              src="./src/assets/Button/btn-group.png"
+              width={30}
+              height={40}
+              alt=""
+            />
           </button>
-          
         </div>
       </div>
     </div>

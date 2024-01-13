@@ -8,20 +8,22 @@ const CompD = () => {
         <button className="bg-blue-600 text-sm rounded block md:hidden p-1 sm:text-base text-white">
           Send inquiry
         </button>
-        <p className="text-sm text-white w-80 hidden md:block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        <p className="text-sm text-white w-80 hidden md:block">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt.
+        </p>
       </div>
 
       <div className="  bg-white rounded-lg gap-3 p-8 md:flex hidden flex-col md:ml-auto w-96 md:mt-0 relative z-10 shadow-md">
         <h2 className="text-gray-900 text-xl mb-1 font-bold title-font">
-            Send quote to suppliers
+          Send quote to suppliers
         </h2>
-       
+
         <div className="relative mb-4">
           <div className="w-full leading-7 text-sm text-gray-600 bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none  py-1 px-3  transition-colors duration-200 ease-in-out">
             what item do you need?
           </div>
           <div className="relative mb-4 mt-4">
-            
             <textarea
               id="message"
               placeholder="Type more detail"
@@ -30,7 +32,7 @@ const CompD = () => {
             ></textarea>
           </div>
           <button className="text-white bg-indigo-500 border-0 p-1 focus:outline-none hover:bg-indigo-600 rounded ">
-           Send inquiry
+            Send inquiry
           </button>
         </div>
       </div>

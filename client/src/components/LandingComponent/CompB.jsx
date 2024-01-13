@@ -1,5 +1,5 @@
-import React from "react";
-import items from "../../utility/CompBLinks";
+import React from 'react';
+import items from '../../utility/CompBLinks';
 
 const CompB = () => {
   return (
@@ -30,7 +30,7 @@ const CompB = () => {
         {/* Lines Of boxes */}
         <div
           className={`flex ${
-            window.innerWidth < 740 ? "horizontal-scroll-container" : ""
+            window.innerWidth < 740 ? 'horizontal-scroll-container' : ''
           } sm:justify-center`}
         >
           {/* particular Box  */}

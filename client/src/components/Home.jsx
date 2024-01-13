@@ -1,35 +1,37 @@
-import LgNav from "./Nav/LgNav";
-import MobileNav from "./Nav/MobileNav";
-import CompA from "./LandingComponent/CompA";
-import CompB from "./LandingComponent/CompB";
-import CompC from "./LandingComponent/CompC";
-import CompD from "./LandingComponent/CompD";
-import CompE from "./LandingComponent/CompE";
-import Footer from "./Footer";
-import useWindowWidth from "../utility/useWindowWidth";
+import LgNav from './Nav/LgNav';
+import MobileNav from './Nav/MobileNav';
+import CompA from './LandingComponent/CompA';
+import CompB from './LandingComponent/CompB';
+import CompC from './LandingComponent/CompC';
+import CompD from './LandingComponent/CompD';
+import CompE from './LandingComponent/CompE';
+import Footer from './Footer';
+import useWindowWidth from '../utility/useWindowWidth';
 
 const Home = () => {
   const windowWidth = useWindowWidth();
   return (
     <div className="font-inter">
-      {windowWidth > 900 ? <LgNav Toshow = {`main`} /> : <MobileNav Toshow = {`main`}/>}
+      {windowWidth > 900 ? (
+        <LgNav Toshow={`main`} />
+      ) : (
+        <MobileNav Toshow={`main`} />
+      )}
       <section className="bg-[#F7FAFC] ">
-      .
+        .
         <CompA />
-        <CompB /> 
+        <CompB />
         <CompC />
         <CompC />
         <CompD />
         <CompE />
-        <Footer/>
+        <Footer />
       </section>
     </div>
   );
 };
 
 export default Home;
-
-
 
 // import Carousel from "./Carousel";
 // import MobileNav from "./Nav/MobileNav";

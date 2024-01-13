@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { IoCartOutline } from "react-icons/io5";
-import { IoIosArrowRoundBack } from "react-icons/io";
+import { useState } from 'react';
+import { IoCartOutline } from 'react-icons/io5';
+import { IoIosArrowRoundBack } from 'react-icons/io';
 
 const LargeCartVersion = () => {
   const QuantityDropdown = () => {

@@ -28,7 +28,7 @@ jobs:
         run: npx eslint server
 
       - name: Prettier check (Server)
-        run: npx prettier --check "server/**/*.js"
+        run: npx prettier --check "server/**/*.{js,json,py}"
 
       - name: Build and test (Client)
         run: |
@@ -37,9 +37,9 @@ jobs:
           # npm run test # Replace with your client-specific test command
 
       - name: ESLint check (Client)
-        run: npx eslint client
+        run: npx eslint ./**/*
 
       - name: Prettier check (Client)
-        run: npx prettier --check "client/**/*.js"
+        run: npx prettier --check "client/**/*.{js,jsx,json}"
 
       # Add more steps for deployment if needed

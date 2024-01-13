@@ -6,7 +6,10 @@ const CompE = () => {
       <div className="grid  grid-cols-2 bg--500 place-items-center sm:grid-cols-3 tab-break:grid-cols-5  gap-3 ">
         {items.map((item, index) => {
           return (
-            <div className="w-40 flex flex-col gap-3 px-2 bg-white  b-shadow rounded " key={index}>
+            <div
+              className="w-40 flex flex-col gap-3 px-2 bg-white  b-shadow rounded "
+              key={index}
+            >
               <a href="#">
                 <img
                   src="./src/assets/test1.png"
@@ -26,7 +29,6 @@ const CompE = () => {
             </div>
           );
         })}
-       
       </div>
     </section>
   );

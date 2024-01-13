@@ -1,37 +1,40 @@
-import MobileSidebar from "./MobileSidebar";
-import PropTypes from 'prop-types'
-import { AiOutlineShoppingCart, AiOutlineSearch } from "react-icons/ai";
-import { BsPerson, BsArrowLeft } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
-import { Link } from 'react-router-dom'
-
-
-
-
+import MobileSidebar from './MobileSidebar';
+import PropTypes from 'prop-types';
+import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
+import { BsPerson, BsArrowLeft } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const MobileNav = (props) => {
   // const toShow = "main"; // Change this to select the desired configuration
-  
+
   MobileNav.propTypes = {
     Toshow: PropTypes.oneOf(['main', 'detail', 'itemlist', 'cart']).isRequired,
   };
-  
+
   const navigate = useNavigate();
   const config = {
     main: {
-      bgColor: "bg-white",
+      bgColor: 'bg-white',
       leftContent: (
         <div className="flex items-center bg-white justify-between px-2 py-1">
           <MobileSidebar />
           <div className="flex items-center">
-            <img src="./src/assets/logo.png" width={34} height={34} alt="Logo" />
+            <img
+              src="./src/assets/logo.png"
+              width={34}
+              height={34}
+              alt="Logo"
+            />
             <h2 className="text-indigo-400 font-bold text-2xl">Brand</h2>
           </div>
         </div>
       ),
       rightContent: (
         <div className="flex items-center gap-2">
-          <Link to={'/cart'}><AiOutlineShoppingCart  size={26} /></Link>
+          <Link to={'/cart'}>
+            <AiOutlineShoppingCart size={26} />
+          </Link>
           <BsPerson size={26} />
         </div>
       ),
@@ -45,18 +48,30 @@ const MobileNav = (props) => {
               placeholder="Search"
             />
           </div>
-  
+
           <div className="horizontal-scroll-container">
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               All Category
             </a>
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               Gadgets
             </a>
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               Clothes
             </a>
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               accessories
             </a>
           </div>
@@ -64,7 +79,7 @@ const MobileNav = (props) => {
       ),
     },
     detail: {
-      bgColor: "bg-rose-200",
+      bgColor: 'bg-rose-200',
       leftContent: (
         <div className="flex gap-1 items-center">
           <BsArrowLeft onClick={() => navigate(-1)} size={22} />
@@ -72,13 +87,15 @@ const MobileNav = (props) => {
       ),
       rightContent: (
         <div className="flex items-center gap-2">
-          <Link to={'/cart'}><AiOutlineShoppingCart  size={26} /></Link>
+          <Link to={'/cart'}>
+            <AiOutlineShoppingCart size={26} />
+          </Link>
           <BsPerson size={24} />
         </div>
       ),
     },
     itemlist: {
-      bgColor: "bg-rose-200",
+      bgColor: 'bg-rose-200',
       leftContent: (
         <div className="flex gap-3 items-center">
           <BsArrowLeft onClick={() => navigate(-1)} size={22} />
@@ -89,7 +106,9 @@ const MobileNav = (props) => {
       ),
       rightContent: (
         <div className="flex items-center gap-2">
-          <Link to={'/cart'}><AiOutlineShoppingCart  size={24} /></Link>
+          <Link to={'/cart'}>
+            <AiOutlineShoppingCart size={24} />
+          </Link>
           <BsPerson size={24} />
         </div>
       ),
@@ -103,18 +122,30 @@ const MobileNav = (props) => {
               placeholder="Search"
             />
           </div>
-  
+
           <div className="horizontal-scroll-container">
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               All Category
             </a>
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               Gadgets
             </a>
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               Clothes
             </a>
-            <a href="#" className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded">
+            <a
+              href="#"
+              className="bg-[#EFF2F4] px-2 py-1  text-[#0D6EFD] rounded"
+            >
               accessories
             </a>
           </div>
@@ -122,7 +153,7 @@ const MobileNav = (props) => {
       ),
     },
     cart: {
-      bgColor: "bg-rose-200",
+      bgColor: 'bg-rose-200',
       leftContent: (
         <div className="flex gap-3 items-center py-1 ">
           <BsArrowLeft onClick={() => navigate(-1)} size={22} />

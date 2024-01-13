@@ -1,0 +1,4 @@
+.yarn*
+public
+.*
+client/src/assets/*

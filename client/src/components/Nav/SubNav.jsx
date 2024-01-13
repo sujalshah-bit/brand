@@ -1,11 +1,11 @@
-import MobileSidebar from "./MobileSidebar";
+import MobileSidebar from './MobileSidebar';
 const SubNav = () => {
   const items = [
-    { item: "All category", link: "#", additionalComponent: <MobileSidebar /> },
-    { item: "Hot offers", link: "#" },
-    { item: "Gift boxes", link: "#" },
-    { item: "Projects", link: "#" },
-    { item: "Menu Item", link: "#" },
+    { item: 'All category', link: '#', additionalComponent: <MobileSidebar /> },
+    { item: 'Hot offers', link: '#' },
+    { item: 'Gift boxes', link: '#' },
+    { item: 'Projects', link: '#' },
+    { item: 'Menu Item', link: '#' },
   ];
   return (
     <section className="flex items-center p-1 justify-between bg-white  cust-break:w-[1150px] mx-auto ">

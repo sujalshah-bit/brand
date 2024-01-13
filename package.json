@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint-check": "npx eslint .",
-    "lint": "npx eslint . --fix"
+    "lint:client": "npx eslint client/**/*",
+    "lint:server": "npx eslint server/**/*",
+    "lint:fix:client": "npx eslint client/**/* --fix",
+    "lint:fix:server": "npx eslint server/**/* --fix"
   },
   "author": "",
   "license": "ISC",

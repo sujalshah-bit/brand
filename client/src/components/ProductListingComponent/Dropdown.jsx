@@ -1,10 +1,10 @@
-import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import { useState } from "react";
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
+import { useState } from 'react';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Featured");
-  const options = ["Option 1", "Option 2", "Option 3", "Option 4"];
+  const [selectedOption, setSelectedOption] = useState('Featured');
+  const options = ['Option 1', 'Option 2', 'Option 3', 'Option 4'];
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 
@@ -20,7 +20,7 @@ const Dropdown = () => {
         className="flex w-32 justify-between  rounded border border-gray-400 px-2 py-1 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none  "
       >
         {selectedOption}
-        {isOpen ? <IoIosArrowUp size={20}/> : <IoIosArrowDown  size={20}/>}
+        {isOpen ? <IoIosArrowUp size={20} /> : <IoIosArrowDown size={20} />}
       </button>
 
       {isOpen && (

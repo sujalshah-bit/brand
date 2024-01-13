@@ -1,14 +1,14 @@
-import { IoBagCheckOutline } from "react-icons/io5";
-import { FaRegHeart } from "react-icons/fa";
-import { LiaCommentSolid } from "react-icons/lia";
-import PropTypes from "prop-types";
-import { useState } from "react";
+import { IoBagCheckOutline } from 'react-icons/io5';
+import { FaRegHeart } from 'react-icons/fa';
+import { LiaCommentSolid } from 'react-icons/lia';
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const LargeDeviceVersion = ({ images, Stars }) => {
-  const [image, setImage] = useState("./src/assets/product-image.png");
+  const [image, setImage] = useState('./src/assets/product-image.png');
 
   const Tabs = () => {
-    const [activeTab, setActiveTab] = useState("description");
+    const [activeTab, setActiveTab] = useState('description');
 
     const handleTabClick = (tab) => {
       setActiveTab(tab);
@@ -18,7 +18,7 @@ const LargeDeviceVersion = ({ images, Stars }) => {
       return (
         <div
           className={`cursor-pointer h-full ${
-            isActive ? "border-b-2  border-blue-500 text-blue-500" : ""
+            isActive ? 'border-b-2  border-blue-500 text-blue-500' : ''
           }`}
           onClick={() => onClick(tab)}
         >
@@ -62,14 +62,14 @@ const LargeDeviceVersion = ({ images, Stars }) => {
           </TabItem>
         </div>
         {/* Content for each tab */}
-        {activeTab === "description" && (
+        {activeTab === 'description' && (
           <div className="p-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. A culpa
             adipisci magnam, quia minima consequuntur ullam sunt at, aperiam
             obcaecati neque impedit itaque numquam qui hic error unde cumque id.
           </div>
         )}
-        {activeTab === "reviews" && (
+        {activeTab === 'reviews' && (
           <div className="p-1">
             Under development Lorem ipsum, dolor sit amet consectetur
             adipisicing elit. Neque, illo facilis adipisci obcaecati illum
@@ -77,7 +77,7 @@ const LargeDeviceVersion = ({ images, Stars }) => {
             perferendis deserunt natus distinctio eos fugit!
           </div>
         )}
-        {activeTab === "shipping" && (
+        {activeTab === 'shipping' && (
           <div className="p-1">
             shipping COntent is under development Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Quos facilis ut exercitationem id
@@ -86,7 +86,7 @@ const LargeDeviceVersion = ({ images, Stars }) => {
             laboriosam.
           </div>
         )}
-        {activeTab === "about-seller" && (
+        {activeTab === 'about-seller' && (
           <div className="p-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             similique voluptates assumenda dolor consequatur veniam neque illo

@@ -1,4 +1,4 @@
-import items from "../../utility/CompALinks";
+import items from '../../utility/CompALinks';
 
 const CompA = () => {
   return (
@@ -23,10 +23,14 @@ const CompA = () => {
           alt=""
         />
         <div className="absolute top-10 md:top-20 md:left-5 flex gap-2 px-2 flex-col">
-        <p className=" text-medium  md:text-2xl  tracking-wider  flex flex-col gap-1 w-52 md:w-72  top-10 left-0 ">
-          Latest trending  <strong className="text-lg">Electronic items.</strong> </p>
- <button className=" text-medium bg-white text-indigo-500 p-1 rounded w-28 top-15 left-0  text-center"> Learn More. </button>
-
+          <p className=" text-medium  md:text-2xl  tracking-wider  flex flex-col gap-1 w-52 md:w-72  top-10 left-0 ">
+            Latest trending{' '}
+            <strong className="text-lg">Electronic items.</strong>{' '}
+          </p>
+          <button className=" text-medium bg-white text-indigo-500 p-1 rounded w-28 top-15 left-0  text-center">
+            {' '}
+            Learn More.{' '}
+          </button>
         </div>
       </div>
 

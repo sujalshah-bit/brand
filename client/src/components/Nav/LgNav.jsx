@@ -1,10 +1,10 @@
-import InputBar from "./InputBar";
-import PropTypes from "prop-types";
-import { BiSolidUser } from "react-icons/bi";
-import { AiFillHeart } from "react-icons/ai";
-import { HiShoppingCart } from "react-icons/hi";
-import { Link } from "react-router-dom";
-import SubNav from "./SubNav";
+import InputBar from './InputBar';
+import PropTypes from 'prop-types';
+import { BiSolidUser } from 'react-icons/bi';
+import { AiFillHeart } from 'react-icons/ai';
+import { HiShoppingCart } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+import SubNav from './SubNav';
 const LgNav = (props) => {
   const MainNav = () => {
     // all Navigation
@@ -101,7 +101,7 @@ const LgNav = (props) => {
   };
 
   LgNav.propTypes = {
-    Toshow: PropTypes.oneOf(["main", "listView", "gridView", "cart"])
+    Toshow: PropTypes.oneOf(['main', 'listView', 'gridView', 'cart'])
       .isRequired,
   };
 
