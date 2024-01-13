@@ -1,4 +1,3 @@
-import React from 'react';
 import items from '../../utility/CompBLinks';
 
 const CompB = () => {

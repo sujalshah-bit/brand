@@ -38,7 +38,7 @@ jobs:
           cd ..
 
       - name: ESLint check (Client)
-        run: npx eslint client/**/*
+        run: npx eslint "client/**/*.{jsx,js}"
 
       - name: Prettier check (Client)
         run: npx prettier --check "client/**/*.{js,jsx,json}"

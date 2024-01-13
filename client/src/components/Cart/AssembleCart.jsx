@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 import LargeCartVersion from './LargeCartVersion';
 import MobileCartVersion from './MobileCartVersion';
 
 const AssembleCart = ({ Toshow }) => {
+  console.log('sujal');
   return (
     <section>
       {Toshow == 'LG' && <LargeCartVersion />}
