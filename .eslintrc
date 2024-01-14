@@ -16,7 +16,9 @@
       "**/*.json",
       "**/* .*", // <-- Fix: Remove the space between "*" and "."
       "**/*.log",
-      "**/*.lock"
+      "**/*.lock",
+      "Dockerfile",
+      "*.yml"
     ],
     "rules": {
       "prettier/prettier": "error", // Enable Prettier's rules

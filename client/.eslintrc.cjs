@@ -21,7 +21,8 @@ module.exports = {
       '**/*.jpeg',
       'src/admin2/*',
       'public/*',
-      'src/assets/*'
+      'src/assets/*',
+      'Dockerfile'
     ],
     
     parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },

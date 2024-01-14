@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "vite --host",
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "pre": "npx eslint ."
-  },
+  },  
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
